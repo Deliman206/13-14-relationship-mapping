@@ -24,10 +24,10 @@ libraryRouter.post('/api/library', jsonParser, (request, response, next) => {
 
 libraryRouter.put('/api/library/:id', jsonParser, (request, response, next) => {
   const options = { runValidators: true, new: true };
-  if (!request.body.name) {
-    logger.log(logger.ERROR, 'LIBRARY-ROUTER: Responding with 400 error code');
-    return next(new HttpErrors(400, 'Library Name is required'));
-  }
+  // if (!request.body.name) {
+  //   logger.log(logger.ERROR, 'LIBRARY-ROUTER: Responding with 400 error code');
+  //   return next(new HttpErrors(400, 'Library Name is required'));
+  // }
   return Library.findByIdAndUpdate(request.params.id, request.body, options)
     .then((updatedLibrary) => {
       if (!updatedLibrary) {
@@ -35,7 +35,7 @@ libraryRouter.put('/api/library/:id', jsonParser, (request, response, next) => {
         return next(new HttpErrors(404, 'library not found'));
       }
 
-      logger.log(logger.INFO, 'GET - responding with 200 status code');
+      logger.log(logger.INFO, 'PUT - responding with 200 status code');
       return response.json(updatedLibrary);
     })
     .catch(next);
