@@ -1,99 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1525362682817" clover="3.2.0">
-  <project timestamp="1525362682817" name="All files">
-    <metrics statements="78" coveredstatements="61" conditionals="18" coveredconditionals="12" methods="18" coveredmethods="14" elements="114" coveredelements="87" complexity="0" loc="78" ncloc="78" packages="4" files="6" classes="6">
+<coverage generated="1525412762608" clover="3.2.0">
+  <project timestamp="1525412762608" name="All files">
+    <metrics statements="140" coveredstatements="103" conditionals="30" coveredconditionals="16" methods="39" coveredmethods="29" elements="209" coveredelements="148" complexity="0" loc="140" ncloc="140" packages="4" files="10" classes="10">
       <package name="__test__.lib">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+        <file name="book-mock.js" path="/Users/sean/codefellows/401/13-14-relationship-mapping/src/__test__/lib/book-mock.js">
+          <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="6" type="stmt"/>
+          <line num="10" count="6" type="stmt"/>
+          <line num="12" count="6" type="stmt"/>
+          <line num="14" count="6" type="stmt"/>
+          <line num="22" count="6" type="stmt"/>
+          <line num="23" count="6" type="stmt"/>
+          <line num="24" count="6" type="stmt"/>
+          <line num="28" count="8" type="stmt"/>
+        </file>
+        <file name="library-mock.js" path="/Users/sean/codefellows/401/13-14-relationship-mapping/src/__test__/lib/library-mock.js">
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="7" count="15" type="stmt"/>
+          <line num="15" count="16" type="stmt"/>
+        </file>
         <file name="test.env.js" path="/Users/sean/codefellows/401/13-14-relationship-mapping/src/__test__/lib/test.env.js">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
         </file>
       </package>
       <package name="lib">
-        <metrics statements="43" coveredstatements="32" conditionals="10" coveredconditionals="7" methods="10" coveredmethods="6"/>
+        <metrics statements="45" coveredstatements="32" conditionals="10" coveredconditionals="6" methods="10" coveredmethods="6"/>
         <file name="error-middleware.js" path="/Users/sean/codefellows/401/13-14-relationship-mapping/src/lib/error-middleware.js">
-          <metrics statements="21" coveredstatements="15" conditionals="10" coveredconditionals="7" methods="1" coveredmethods="1"/>
-          <line num="6" count="5" type="stmt"/>
-          <line num="7" count="5" type="stmt"/>
-          <line num="9" count="5" type="cond" truecount="2" falsecount="0"/>
-          <line num="10" count="2" type="stmt"/>
-          <line num="11" count="2" type="stmt"/>
-          <line num="14" count="3" type="stmt"/>
-          <line num="16" count="3" type="cond" truecount="2" falsecount="0"/>
-          <line num="17" count="1" type="stmt"/>
-          <line num="18" count="1" type="stmt"/>
-          <line num="21" count="2" type="cond" truecount="2" falsecount="0"/>
-          <line num="22" count="1" type="stmt"/>
-          <line num="23" count="1" type="stmt"/>
-          <line num="25" count="1" type="cond" truecount="1" falsecount="1"/>
-          <line num="26" count="1" type="stmt"/>
-          <line num="27" count="1" type="stmt"/>
-          <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="31" count="0" type="stmt"/>
+          <metrics statements="22" coveredstatements="14" conditionals="10" coveredconditionals="6" methods="1" coveredmethods="1"/>
+          <line num="6" count="7" type="stmt"/>
+          <line num="7" count="7" type="stmt"/>
+          <line num="8" count="7" type="stmt"/>
+          <line num="10" count="7" type="cond" truecount="2" falsecount="0"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="15" count="4" type="stmt"/>
+          <line num="17" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="18" count="2" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
+          <line num="22" count="2" type="cond" truecount="1" falsecount="1"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+          <line num="26" count="2" type="cond" truecount="1" falsecount="1"/>
+          <line num="27" count="2" type="stmt"/>
+          <line num="28" count="2" type="stmt"/>
+          <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
           <line num="32" count="0" type="stmt"/>
-          <line num="35" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
           <line num="36" count="0" type="stmt"/>
           <line num="37" count="0" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
         </file>
         <file name="logger.js" path="/Users/sean/codefellows/401/13-14-relationship-mapping/src/lib/logger.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="6" count="1" type="stmt"/>
-          <line num="15" count="1" type="stmt"/>
-          <line num="16" count="1" type="stmt"/>
-          <line num="17" count="1" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="15" count="2" type="stmt"/>
+          <line num="16" count="2" type="stmt"/>
+          <line num="17" count="2" type="stmt"/>
         </file>
         <file name="server.js" path="/Users/sean/codefellows/401/13-14-relationship-mapping/src/lib/server.js">
-          <metrics statements="17" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="5"/>
-          <line num="9" count="1" type="stmt"/>
-          <line num="10" count="1" type="stmt"/>
-          <line num="12" count="1" type="stmt"/>
-          <line num="14" count="1" type="stmt"/>
-          <line num="15" count="0" type="stmt"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="19" count="1" type="stmt"/>
-          <line num="21" count="1" type="stmt"/>
-          <line num="22" count="1" type="stmt"/>
-          <line num="24" count="1" type="stmt"/>
-          <line num="25" count="1" type="stmt"/>
-          <line num="29" count="0" type="stmt"/>
-          <line num="33" count="1" type="stmt"/>
-          <line num="34" count="1" type="stmt"/>
-          <line num="36" count="1" type="stmt"/>
-          <line num="37" count="0" type="stmt"/>
-          <line num="41" count="0" type="stmt"/>
+          <metrics statements="18" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="5"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="16" count="2" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
+          <line num="18" count="0" type="stmt"/>
+          <line num="21" count="2" type="stmt"/>
+          <line num="23" count="2" type="stmt"/>
+          <line num="24" count="2" type="stmt"/>
+          <line num="26" count="2" type="stmt"/>
+          <line num="27" count="2" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="35" count="2" type="stmt"/>
+          <line num="36" count="2" type="stmt"/>
+          <line num="38" count="2" type="stmt"/>
+          <line num="39" count="0" type="stmt"/>
+          <line num="43" count="0" type="stmt"/>
         </file>
       </package>
       <package name="model">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="17" coveredstatements="10" conditionals="4" coveredconditionals="1" methods="7" coveredmethods="3"/>
+        <file name="book-model.js" path="/Users/sean/codefellows/401/13-14-relationship-mapping/src/model/book-model.js">
+          <metrics statements="16" coveredstatements="9" conditionals="4" coveredconditionals="1" methods="7" coveredmethods="3"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="33" count="8" type="stmt"/>
+          <line num="35" count="8" type="cond" truecount="1" falsecount="1"/>
+          <line num="36" count="0" type="stmt"/>
+          <line num="38" count="8" type="stmt"/>
+          <line num="39" count="8" type="stmt"/>
+          <line num="41" count="8" type="stmt"/>
+          <line num="44" count="2" type="stmt"/>
+          <line num="45" count="0" type="stmt"/>
+          <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="48" count="0" type="stmt"/>
+          <line num="50" count="0" type="stmt"/>
+          <line num="51" count="0" type="stmt"/>
+          <line num="54" count="0" type="stmt"/>
+          <line num="59" count="2" type="stmt"/>
+          <line num="60" count="2" type="stmt"/>
+        </file>
         <file name="library.js" path="/Users/sean/codefellows/401/13-14-relationship-mapping/src/model/library.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="5" count="1" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
         </file>
       </package>
       <package name="route">
-        <metrics statements="31" coveredstatements="25" conditionals="8" coveredconditionals="5" methods="8" coveredmethods="8"/>
+        <metrics statements="63" coveredstatements="46" conditionals="16" coveredconditionals="9" methods="16" coveredmethods="14"/>
+        <file name="book-router.js" path="/Users/sean/codefellows/401/13-14-relationship-mapping/src/route/book-router.js">
+          <metrics statements="32" coveredstatements="26" conditionals="8" coveredconditionals="5" methods="8" coveredmethods="8"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="14" count="3" type="stmt"/>
+          <line num="15" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="20" count="2" type="stmt"/>
+          <line num="21" count="1" type="stmt"/>
+          <line num="25" count="2" type="stmt"/>
+          <line num="26" count="1" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
+          <line num="29" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="34" count="1" type="stmt"/>
+          <line num="35" count="1" type="stmt"/>
+          <line num="39" count="2" type="stmt"/>
+          <line num="40" count="2" type="stmt"/>
+          <line num="42" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="43" count="0" type="stmt"/>
+          <line num="44" count="0" type="stmt"/>
+          <line num="46" count="1" type="stmt"/>
+          <line num="47" count="1" type="stmt"/>
+          <line num="48" count="1" type="stmt"/>
+          <line num="52" count="2" type="stmt"/>
+          <line num="53" count="2" type="stmt"/>
+          <line num="55" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="56" count="0" type="stmt"/>
+          <line num="57" count="0" type="stmt"/>
+          <line num="59" count="1" type="stmt"/>
+          <line num="60" count="1" type="stmt"/>
+        </file>
         <file name="library-router.js" path="/Users/sean/codefellows/401/13-14-relationship-mapping/src/route/library-router.js">
-          <metrics statements="31" coveredstatements="25" conditionals="8" coveredconditionals="5" methods="8" coveredmethods="8"/>
-          <line num="10" count="1" type="stmt"/>
-          <line num="12" count="1" type="stmt"/>
-          <line num="14" count="1" type="stmt"/>
+          <metrics statements="31" coveredstatements="20" conditionals="8" coveredconditionals="4" methods="8" coveredmethods="6"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
           <line num="15" count="4" type="cond" truecount="2" falsecount="0"/>
           <line num="16" count="2" type="stmt"/>
           <line num="17" count="2" type="stmt"/>
           <line num="20" count="2" type="stmt"/>
           <line num="21" count="1" type="stmt"/>
-          <line num="25" count="1" type="stmt"/>
-          <line num="26" count="3" type="stmt"/>
-          <line num="31" count="3" type="stmt"/>
-          <line num="33" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="25" count="2" type="stmt"/>
+          <line num="26" count="0" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
           <line num="34" count="0" type="stmt"/>
           <line num="35" count="0" type="stmt"/>
-          <line num="38" count="1" type="stmt"/>
-          <line num="39" count="1" type="stmt"/>
-          <line num="44" count="1" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="39" count="0" type="stmt"/>
+          <line num="44" count="2" type="stmt"/>
           <line num="45" count="1" type="stmt"/>
           <line num="47" count="1" type="cond" truecount="1" falsecount="1"/>
           <line num="48" count="0" type="stmt"/>
@@ -101,7 +175,7 @@
           <line num="52" count="1" type="stmt"/>
           <line num="53" count="1" type="stmt"/>
           <line num="54" count="1" type="stmt"/>
-          <line num="59" count="1" type="stmt"/>
+          <line num="59" count="2" type="stmt"/>
           <line num="60" count="1" type="stmt"/>
           <line num="62" count="1" type="cond" truecount="1" falsecount="1"/>
           <line num="63" count="0" type="stmt"/>

@@ -5,11 +5,13 @@ import mongoose from 'mongoose';
 import logger from './logger';
 import libraryRoutes from '../route/library-router';
 import errorMiddleWare from './error-middleware';
+import bookRoutes from '../route/book-router';
 
 const app = express();
 let server = null;
 
 app.use(libraryRoutes);
+app.use(bookRoutes);
 
 app.all('*', (request, response) => {
   logger.log(logger.INFO, 'SERVER: Returning a 404 from the catch-all/default route');

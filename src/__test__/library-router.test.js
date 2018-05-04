@@ -2,24 +2,15 @@
 
 import faker from 'faker';
 import superagent from 'superagent';
-import Library from '../model/library';
+import { pCreateLibraryMock, pRemoveLibraryMock } from './lib/library-mock';
 import { startServer, stopServer } from '../lib/server';
 
 const apiUrl = `http://localhost:${process.env.PORT}/api/library`;
 
-const pCreateLibraryMock = () => {
-  return new Library({
-    name: faker.name.firstName(),
-    address: faker.address.streetAddress(),
-    founder: faker.name.lastName(),
-    year: faker.random.number(),
-  }).save();
-};
-
 describe('api/library', () => {
   beforeAll(startServer);
   afterAll(stopServer);
-  afterEach(() => Library.remove({}));
+  afterEach(pRemoveLibraryMock);
 
   describe('POST api/library', () => {
     test('200', () => {
@@ -77,11 +68,17 @@ describe('api/library', () => {
   });
 
   describe('PUT api/library', () => {
+    const test = () => { 
+      pCreateLibraryMock()
+        .then((library) => {
+          return library;
+        });
+    };
     test('200 for succcesful PUT', () => {
-      let libraryToUpdate = null;
+      // let libraryToUpdate = null;
       return pCreateLibraryMock()
         .then((library) => {
-          libraryToUpdate = library;
+          // libraryToUpdate = library;
           return superagent.put(`${apiUrl}/${library._id}`)
             .send({ year: 2018 });
         })
@@ -112,7 +109,16 @@ describe('api/library', () => {
           expect(err.status).toEqual(404);
         });
     });
-    test('409 for PUT Unique Key value', () => {});
+    test('409 for PUT Unique Key value', () => {
+      return pCreateLibraryMock()
+        .then((library) => {
+          return superagent.post(`${apiUrl}/${library._id}`)
+            .send({ name: test.name });
+        })
+        .catch((error) => {
+          expect(error.status).toEqual(409);
+        });
+    });
   });
 
   describe('GET /api/library', () => {

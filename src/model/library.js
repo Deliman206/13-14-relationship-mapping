@@ -24,6 +24,9 @@ const librarySchema = mongoose.Schema({
       type: mongoose.Schema.Types.ObjectId, ref: 'books', 
     },
   ],
+}, {
+  usePushEach: true,
+  
 });
 
-export default mongoose.model('category', librarySchema);
+export default mongoose.model('library', librarySchema);

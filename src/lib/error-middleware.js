@@ -3,6 +3,7 @@
 import logger from './logger';
 
 export default (error, request, response, next) => { // eslint-disable-line no-unused-vars
+  console.log('hit next function');
   logger.log(logger.ERROR, '__ERROR_MIDDLEWARE__');
   logger.log(logger.ERROR, error);
 
