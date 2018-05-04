@@ -83,7 +83,7 @@ describe('/api/books', () => {
           return superagent.get(`${apiUrl}/${book.book._id}`)
             .then((response) => {
               expect(response.status).toEqual(200);
-              // expect(response.body._id).toEqual(tempBook.book._id);
+              expect(response.body._id).toEqual(tempBook.book._id.toString());
             });
         });
     });
