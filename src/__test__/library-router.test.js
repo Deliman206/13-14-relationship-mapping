@@ -111,12 +111,25 @@ describe('api/library', () => {
     });
     test('409 for PUT Unique Key value', () => {
       return pCreateLibraryMock()
+<<<<<<< HEAD:src/__test__/library-router.test.js
         .then((library) => {
           return superagent.post(`${apiUrl}/${library._id}`)
             .send({ name: test.name });
         })
         .catch((error) => {
           expect(error.status).toEqual(409);
+=======
+        .then((dup) => {
+          return pCreateLibraryMock()
+            .then((library) => {
+              return superagent.put(`${apiUrl}/${library._id}`)
+                .send({ name: dup.name });
+            })
+            .then(Promise.reject)
+            .catch((error) => {
+              expect(error.status).toEqual(409);
+            });
+>>>>>>> lab-11:src/__test__/category-router.test.js
         });
     });
   });
@@ -156,6 +169,15 @@ describe('api/library', () => {
           expect(response.status).toEqual(204);
         });
     });
-    test('404 Resource with Id not existing', () => {});
+    test('404 Resource with Id not existing', () => {
+      return pCreateLibraryMock()
+        .then(() => {
+          return superagent.delete(`${apiUrl}/1234`);
+        })
+        .then(Promise.reject)
+        .catch((error) => {
+          expect(error.status).toEqual(404);
+        });
+    });
   });
 });

@@ -66,7 +66,8 @@ libraryRouter.delete('/api/library/:id', (request, response, next) => {
 
       logger.log(logger.INFO, 'LIBRARY ROUTER: responding with 204 status code');
       return response.sendStatus(204);
-    });
+    })
+    .catch(next);
 });
 
 export default libraryRouter;

@@ -57,6 +57,7 @@ SF:/Users/sean/codefellows/401/13-14-relationship-mapping/src/lib/error-middlewa
 FN:5,(anonymous_0)
 FNF:1
 FNH:1
+<<<<<<< HEAD
 FNDA:8,(anonymous_0)
 DA:6,8
 DA:7,8
@@ -74,11 +75,31 @@ DA:24,0
 DA:26,2
 DA:27,2
 DA:28,2
+=======
+FNDA:7,(anonymous_0)
+DA:6,7
+DA:7,7
+DA:9,7
+DA:10,2
+DA:11,2
+DA:14,5
+DA:16,5
+DA:17,3
+DA:18,3
+DA:21,2
+DA:22,1
+DA:23,1
+DA:25,1
+DA:26,1
+DA:27,1
+DA:30,0
+>>>>>>> lab-11
 DA:31,0
 DA:32,0
 DA:33,0
 DA:36,0
 DA:37,0
+<<<<<<< HEAD
 DA:38,0
 LF:22
 LH:14
@@ -92,6 +113,20 @@ BRDA:26,3,0,2
 BRDA:26,3,1,0
 BRDA:31,4,0,0
 BRDA:31,4,1,0
+=======
+LF:21
+LH:15
+BRDA:9,0,0,2
+BRDA:9,0,1,5
+BRDA:16,1,0,3
+BRDA:16,1,1,2
+BRDA:21,2,0,1
+BRDA:21,2,1,1
+BRDA:25,3,0,1
+BRDA:25,3,1,0
+BRDA:30,4,0,0
+BRDA:30,4,1,0
+>>>>>>> lab-11
 BRF:10
 BRH:6
 end_of_record
@@ -286,11 +321,16 @@ FNF:8
 FNH:6
 FNDA:4,(anonymous_0)
 FNDA:1,(anonymous_1)
+<<<<<<< HEAD
 FNDA:0,(anonymous_2)
 FNDA:0,(anonymous_3)
+=======
+FNDA:3,(anonymous_2)
+FNDA:1,(anonymous_3)
+>>>>>>> lab-11
 FNDA:2,(anonymous_4)
 FNDA:1,(anonymous_5)
-FNDA:1,(anonymous_6)
+FNDA:2,(anonymous_6)
 FNDA:1,(anonymous_7)
 DA:10,2
 DA:12,2
@@ -306,9 +346,15 @@ DA:31,0
 DA:33,0
 DA:34,0
 DA:35,0
+<<<<<<< HEAD
 DA:38,0
 DA:39,0
 DA:44,2
+=======
+DA:38,1
+DA:39,1
+DA:44,1
+>>>>>>> lab-11
 DA:45,2
 DA:47,1
 DA:48,0
@@ -316,8 +362,13 @@ DA:49,0
 DA:52,1
 DA:53,1
 DA:54,1
+<<<<<<< HEAD
 DA:59,2
 DA:60,1
+=======
+DA:59,1
+DA:60,2
+>>>>>>> lab-11
 DA:62,1
 DA:63,0
 DA:64,0
