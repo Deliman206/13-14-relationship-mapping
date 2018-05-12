@@ -111,14 +111,6 @@ describe('api/library', () => {
     });
     test('409 for PUT Unique Key value', () => {
       return pCreateLibraryMock()
-<<<<<<< HEAD:src/__test__/library-router.test.js
-        .then((library) => {
-          return superagent.post(`${apiUrl}/${library._id}`)
-            .send({ name: test.name });
-        })
-        .catch((error) => {
-          expect(error.status).toEqual(409);
-=======
         .then((dup) => {
           return pCreateLibraryMock()
             .then((library) => {
@@ -129,7 +121,6 @@ describe('api/library', () => {
             .catch((error) => {
               expect(error.status).toEqual(409);
             });
->>>>>>> lab-11:src/__test__/category-router.test.js
         });
     });
   });
