@@ -163,6 +163,15 @@ describe('api/library', () => {
           expect(response.status).toEqual(204);
         });
     });
-    test('404 Resource with Id not existing', () => {});
+    test('404 Resource with Id not existing', () => {
+      return pCreateLibraryMock()
+        .then(() => {
+          return superagent.delete(`${apiUrl}/1234`);
+        })
+        .then(Promise.reject)
+        .catch((error) => {
+          expect(error.status).toEqual(404);
+        });
+    });
   });
 });
