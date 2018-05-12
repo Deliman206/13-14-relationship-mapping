@@ -78,10 +78,10 @@ describe('api/library', () => {
 
   describe('PUT api/library', () => {
     test('200 for succcesful PUT', () => {
-      let libraryToUpdate = null;
+      // let libraryToUpdate = null;
       return pCreateLibraryMock()
         .then((library) => {
-          libraryToUpdate = library;
+          // libraryToUpdate = library;
           return superagent.put(`${apiUrl}/${library._id}`)
             .send({ year: 2018 });
         })
@@ -112,7 +112,20 @@ describe('api/library', () => {
           expect(err.status).toEqual(404);
         });
     });
-    test('409 for PUT Unique Key value', () => {});
+    test.only('409 for PUT Unique Key value', () => {
+      return pCreateLibraryMock()
+        .then((dup) => {
+          return pCreateLibraryMock()
+            .then((library) => {
+              return superagent.put(`${apiUrl}/${library._id}`)
+                .send({ name: dup.name });
+            })
+            .then(Promise.reject)
+            .catch((error) => {
+              expect(error.status).toEqual(409);
+            });
+        });
+    });
   });
 
   describe('GET /api/library', () => {
