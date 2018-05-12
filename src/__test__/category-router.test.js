@@ -112,7 +112,7 @@ describe('api/library', () => {
           expect(err.status).toEqual(404);
         });
     });
-    test.only('409 for PUT Unique Key value', () => {
+    test('409 for PUT Unique Key value', () => {
       return pCreateLibraryMock()
         .then((dup) => {
           return pCreateLibraryMock()
@@ -141,7 +141,16 @@ describe('api/library', () => {
             });
         });
     });
-    test('404 for GET Id not found', () => {});
+    test('404 for GET Id not found', () => {
+      return pCreateLibraryMock()
+        .then(() => {
+          return superagent.get(`${apiUrl}/1234`)
+            .then(Promise.reject)
+            .catch((error) => {
+              expect(error.status).toEqual(404);
+            });
+        });
+    });
   });
 
   describe('DELETE /api/library', () => {
