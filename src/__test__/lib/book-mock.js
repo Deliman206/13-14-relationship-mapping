@@ -19,7 +19,6 @@ const pCreateBookMock = () => {
       }).save();
     })
     .then((newBook) => {
-      console.log(newBook.library);
       resultMock.book = newBook;
       return resultMock;
     });

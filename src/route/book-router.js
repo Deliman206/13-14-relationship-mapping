@@ -11,7 +11,6 @@ const jsonParser = bodyParser.json();
 const bookRouter = new Router();
 
 bookRouter.post('/api/books', jsonParser, (request, response, next) => {
-  console.log('hitting post');
   if (!request.body.title) {
     logger.log(logger.INFO, 'BOOK-ROUTER: Responding with 400 error code');
     return next(new HttpErrors(400, 'Book Title is required'));

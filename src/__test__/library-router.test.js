@@ -134,7 +134,16 @@ describe('api/library', () => {
             });
         });
     });
-    test('404 for GET Id not found', () => {});
+    test('404 for GET Id not found', () => {
+      return pCreateLibraryMock()
+        .then(() => {
+          return superagent.get(`${apiUrl}/1234`)
+            .then(Promise.reject)
+            .catch((error) => {
+              expect(error.status).toEqual(404);
+            });
+        });
+    });
   });
 
   describe('DELETE /api/library', () => {
