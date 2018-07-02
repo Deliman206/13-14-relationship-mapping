@@ -78,18 +78,14 @@ describe('api/library', () => {
 
   describe('PUT api/library', () => {
     test('200 for succcesful PUT', () => {
-      // let libraryToUpdate = null;
       return pCreateLibraryMock()
         .then((library) => {
-          // libraryToUpdate = library;
           return superagent.put(`${apiUrl}/${library._id}`)
             .send({ year: 2018 });
         })
         .then((response) => {
           expect(response.status).toEqual(200);
           expect(response.body.year).toEqual(2018);
-          // expect(response.body.address).toEqual(libraryToUpdate.address);
-          // expect(response.body._id).toEqual(libraryToUpdate._id.toString());
         });
     });
     test('400 for PUT Request is invalid', () => {

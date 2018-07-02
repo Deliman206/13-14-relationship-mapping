@@ -26,4 +26,4 @@ const librarySchema = mongoose.Schema({
   ],
 });
 
-export default mongoose.model('category', librarySchema);
+export default mongoose.model('library', librarySchema);

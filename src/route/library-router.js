@@ -45,7 +45,7 @@ libraryRouter.get('/api/library/:id', (request, response, next) => {
   return Library.findById(request.params.id)
     .then((library) => {
       if (!library) {
-        logger.log(logger.ERROR, 'LIBRARY ROUTER: responding with 404 status code !category');
+        logger.log(logger.ERROR, 'LIBRARY ROUTER: responding with 404 status code !library');
         return next(new HttpErrors(404, 'library not found'));
       }
 
