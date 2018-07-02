@@ -108,6 +108,19 @@ describe('api/library', () => {
           expect(err.status).toEqual(404);
         });
     });
+    test('Request Update with no information in resquest.body', () => {
+      let compareLib = null;
+      return pCreateLibraryMock()
+        .then((mockLibrary) => {
+          compareLib = mockLibrary;
+          return superagent.put(`${apiUrl}/${mockLibrary._id}`)
+            .send({})
+            .then((response) => {
+              expect(response.status).toEqual(200);
+              expect(response.body.name).toEqual(compareLib.name);
+            });
+        });
+    });
     test('409 for PUT Unique Key value', () => {
       return pCreateLibraryMock()
         .then((dup) => {
@@ -125,7 +138,7 @@ describe('api/library', () => {
   });
 
   describe('GET /api/library', () => {
-    test('200', () => {
+    test('200 on specific ID', () => {
       let tempLibrary = null;
       return pCreateLibraryMock()
         .then((library) => {

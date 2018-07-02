@@ -24,10 +24,6 @@ libraryRouter.post('/api/library', jsonParser, (request, response, next) => {
 
 libraryRouter.put('/api/library/:id', jsonParser, (request, response, next) => {
   const options = { runValidators: true, new: true };
-  // if (!request.body.name) {
-  //   logger.log(logger.ERROR, 'LIBRARY-ROUTER: Responding with 400 error code');
-  //   return next(new HttpErrors(400, 'Library Name is required'));
-  // }
   return Library.findByIdAndUpdate(request.params.id, request.body, options)
     .then((updatedLibrary) => {
       if (!updatedLibrary) {

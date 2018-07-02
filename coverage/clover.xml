@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1530553934277" clover="3.2.0">
-  <project timestamp="1530553934277" name="All files">
+<coverage generated="1530560662998" clover="3.2.0">
+  <project timestamp="1530560662999" name="All files">
     <metrics statements="78" coveredstatements="61" conditionals="18" coveredconditionals="12" methods="18" coveredmethods="14" elements="114" coveredelements="87" complexity="0" loc="78" ncloc="78" packages="4" files="6" classes="6">
       <package name="__test__.lib">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -39,11 +39,11 @@
         </file>
         <file name="logger.js" path="/Users/sean/codefellows/401/13-14-relationship-mapping/src/lib/logger.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="6" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
           <line num="15" count="1" type="stmt"/>
           <line num="16" count="1" type="stmt"/>
-          <line num="17" count="1" type="stmt"/>
         </file>
         <file name="server.js" path="/Users/sean/codefellows/401/13-14-relationship-mapping/src/lib/server.js">
           <metrics statements="17" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="5"/>
@@ -86,28 +86,28 @@
           <line num="20" count="2" type="stmt"/>
           <line num="21" count="1" type="stmt"/>
           <line num="25" count="1" type="stmt"/>
-          <line num="26" count="4" type="stmt"/>
-          <line num="31" count="4" type="stmt"/>
-          <line num="33" count="1" type="cond" truecount="1" falsecount="1"/>
-          <line num="34" count="0" type="stmt"/>
-          <line num="35" count="0" type="stmt"/>
-          <line num="38" count="1" type="stmt"/>
-          <line num="39" count="1" type="stmt"/>
-          <line num="44" count="1" type="stmt"/>
-          <line num="45" count="2" type="stmt"/>
-          <line num="47" count="1" type="cond" truecount="1" falsecount="1"/>
-          <line num="48" count="0" type="stmt"/>
-          <line num="49" count="0" type="stmt"/>
-          <line num="52" count="1" type="stmt"/>
-          <line num="53" count="1" type="stmt"/>
-          <line num="54" count="1" type="stmt"/>
-          <line num="59" count="1" type="stmt"/>
-          <line num="60" count="2" type="stmt"/>
-          <line num="62" count="1" type="cond" truecount="1" falsecount="1"/>
-          <line num="63" count="0" type="stmt"/>
-          <line num="64" count="0" type="stmt"/>
-          <line num="67" count="1" type="stmt"/>
-          <line num="68" count="1" type="stmt"/>
+          <line num="26" count="5" type="stmt"/>
+          <line num="27" count="5" type="stmt"/>
+          <line num="29" count="2" type="cond" truecount="1" falsecount="1"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="34" count="2" type="stmt"/>
+          <line num="35" count="2" type="stmt"/>
+          <line num="40" count="1" type="stmt"/>
+          <line num="41" count="2" type="stmt"/>
+          <line num="43" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="44" count="0" type="stmt"/>
+          <line num="45" count="0" type="stmt"/>
+          <line num="48" count="1" type="stmt"/>
+          <line num="49" count="1" type="stmt"/>
+          <line num="50" count="1" type="stmt"/>
+          <line num="55" count="1" type="stmt"/>
+          <line num="56" count="2" type="stmt"/>
+          <line num="58" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="59" count="0" type="stmt"/>
+          <line num="60" count="0" type="stmt"/>
+          <line num="63" count="1" type="stmt"/>
+          <line num="64" count="1" type="stmt"/>
         </file>
       </package>
     </metrics>

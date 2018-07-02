@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --coverage --forceExit --runInBand",
     "dbon": "mkdir -p ./db && mongod --dbpath ./db",
-    "dboff": "killall mongod"
+    "dboff": "killall mongod",
+    "start": "node index.js"
   },
   "jest": {
     "setupFiles": [
