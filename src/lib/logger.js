@@ -1,6 +1,5 @@
 'use strict';
 
-// Vinicio - The current winston prefers to be imported with ES5
 const winston = require('winston');
 
 const logger = winston.createLogger({

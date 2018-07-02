@@ -3,7 +3,6 @@
 import faker from 'faker';
 import Book from '../../model/book-model';
 import * as libraryMock from './library-mock';
-// import { pCreateLibraryMock, pRemoveLibraryMock } from './library-mock';
 
 const pCreateBookMock = () => {
   const resultMock = {};

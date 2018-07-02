@@ -23,13 +23,7 @@ const bookSchema = mongoose.Schema({
     reference: 'library',
   },
 });
-
-// A mongoose hook access to 
-// - a done() function
-// - the object we are working with ( mongoose calls this 'document')
-
-function bookPreHook(done) { // done is using an (error, data) signature
-// the value of 'contextual this' is the document
+function bookPreHook(done) { 
   return Library.findById(this.library)
     .then((libraryFound) => {
       if (!libraryFound) {
@@ -38,8 +32,8 @@ function bookPreHook(done) { // done is using an (error, data) signature
       libraryFound.books.push(this._id);
       return libraryFound.save();
     })
-    .then(() => done()) // done w/o arguements means success
-    .catch(done); // done with results means error
+    .then(() => done()) 
+    .catch(done); 
 } 
 const bookPostHook = (document, done) => {
   return Library.findById(document.library)

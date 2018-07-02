@@ -39,7 +39,7 @@ bookRouter.get('/api/books/:id', (request, response, next) => {
   return Book.findById(request.params.id)
     .then((book) => {
       if (!book) {
-        logger.log(logger.ERROR, 'BOOK ROUTER: responding with 404 status code !category');
+        logger.log(logger.ERROR, 'BOOK ROUTER: responding with 404 status code !Library');
         return next(new HttpErrors(404, 'book not found'));
       }
       logger.log(logger.INFO, 'BOOK ROUTER: responding with 200 status code');
